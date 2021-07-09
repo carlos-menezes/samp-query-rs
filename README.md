@@ -5,7 +5,7 @@ Implements the [SA:MP query mechanism](https://sampwiki.blast.hk/wiki/Query_Mech
 ## Examples
 
 ```rs
-let query = Query::new(s.0, s.1).await?;
+let query = Query::new("127.0.0.1", 7777).await?;
 query.send();
 let packet = query.recv().await?; // access struct data afterwards
 ```
